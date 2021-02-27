@@ -61,6 +61,14 @@ neither:
     
     
 ## Acknowledgements :
-https://arxiv.org/abs/1909.04251 
-https://data.world/thomasrdavidson/hate-speech-and-offensive-language 
-https://datahack.analyticsvidhya.com/contest/practice-problem-twitter-sentiment-analysis/#LeaderBoard
+
+
+[Davidson, T., D. Warmsley, et al. (2017). "Automated Hate Speech Detection and the Problem of Offensive Language.](https://www.researchgate.net/publication/314942659_Automated_Hate_Speech_Detection_and_the_Problem_of_Offensive_Language)
+For Dataset of this paper : https://data.world/thomasrdavidson/hate-speech-and-offensive-language 
+	
+[Qian, J., A. Bethke, et al. (2019). A Benchmark Dataset for Learning to Intervene in Online Hate Speech.](https://www.researchgate.net/publication/336997246_A_Benchmark_Dataset_for_Learning_to_Intervene_in_Online_Hate_Speech)
+For Dataset of this paper : https://github.com/jing-qian/A-Benchmark-Dataset-for-Learning-to-Intervene-in-Online-Hate-Speech
+	
+[Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-twitter-sentiment-analysis/#LeaderBoard)
+For Dataset of this Hackathon : https://www.kaggle.com/dv1453/twitter-sentiment-analysis-analytics-vidya?select=train_E6oV3lV.csv 
+
