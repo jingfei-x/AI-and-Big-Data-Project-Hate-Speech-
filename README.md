@@ -1,9 +1,15 @@
 # AI and-Big Data Project -- Hate Speech Detection
 ![hate speech](http://www.unz.com/wp-content/uploads/2017/10/shutterstock_712486300.jpg)  
 
-The aim of this project is to detect hate speech and offensive speech from normal sayings on social media.  
+ 
 **WARNING:**  
-The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.
+*The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.*
+
+For better visualization/**brief summary** of the project, you may look at our [Google Slides](https://drive.google.com/file/d/1ZYdkOrVsBld5lvz3K6pfUXcrPHd8q45z/view?usp=sharing).   
+
+
+## Objective :
+The aim of this project is to detect hate speech and offensive speech from normal sayings on social media.   
 
 ## Dataset : 
 The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset.  
