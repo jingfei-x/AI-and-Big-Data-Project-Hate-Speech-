@@ -1,4 +1,5 @@
 # AI and-Big Data Project -- Hate Speech Detection
+![hate speech](http://www.unz.com/wp-content/uploads/2017/10/shutterstock_712486300.jpg)  
 
 The aim of this project is to detect hate speech and offensive speech from normal sayings on social media.  
 **WARNING:**  
