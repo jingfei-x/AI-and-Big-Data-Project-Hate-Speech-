@@ -41,7 +41,7 @@ def write():
             user_text = clean_tweet(user_text)
             # tokenizing
             stop_words = set(stopwords.words('english'))
-            tokens = nltk.word_tokenize(stop_words)
+            tokens = nltk.word_tokenize(user_text)
             # removing stop words
             stopwords_removed = [token.lower() for token in tokens if token.lower() not in stop_words]
             # taking root word
@@ -59,7 +59,7 @@ def write():
             X_test_count = tfidf.transform(X_test)
 
             # loading in model
-            final_model = pickle.load(open('pickle/final_logreg_model.pkl', 'rb'))
+            final_model = pickle.load(open('pickle/svm_model.pkl', 'rb'))
 
             # apply model to make predictions
             prediction = final_model.predict(X_test_count[0])
