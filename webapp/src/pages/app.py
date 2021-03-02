@@ -58,14 +58,14 @@ def write():
             tfidf = TfidfVectorizer()
             X_train = pickle.load(open('pickle/X_train.pkl', 'rb'))
             X_test = lemmatized_output
-            X_train_count = tfidf.fit_transform(X_train)
-            X_test_count = tfidf.transform(X_test)
+            tfidf_data_train = tfidf.fit_transform(X_train)
+            tfidf_data_test = tfidf.transform(X_test)
 
             # loading in model
             final_model = pickle.load(open('pickle/svm_model.pkl', 'rb'))
 
             # apply model to make predictions
-            prediction = final_model.predict(X_test_count[0])
+            prediction = final_model.predict(tfidf_data_test[0])
 
             if prediction == 0:
                 st.error('**Hate Speech  :anger:**')
