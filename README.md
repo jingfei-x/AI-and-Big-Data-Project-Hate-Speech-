@@ -6,6 +6,7 @@
 *The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.*
 
 For better visualization/**brief summary** of the project, you may look at our [Google Slides](https://drive.google.com/file/d/1ZYdkOrVsBld5lvz3K6pfUXcrPHd8q45z/view?usp=sharing).   
+[![Generic badge](https://img.shields.io/badge/Google-Slides-<YELLOW>.svg)](https://drive.google.com/file/d/1ZYdkOrVsBld5lvz3K6pfUXcrPHd8q45z/view?usp=sharing)
 
 
 ## Objective :
@@ -67,7 +68,13 @@ neither:
     Neither: 4163 (12.13% of total)
 ```
     
-    
+## Models :
+
+We have tried several machine learning models and neural network and we choose **Support Vector Machine(SVM)** as our final model based on the **recall score** of class 0 (hate speech) and class 1 (offensive language).  
+For the result of neural network, you can check it out on 
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bd0-Mg-XdyyzLHc9j6rIYKy6tSDALUhY?usp=sharing).    
+
+
 ## Acknowledgements :
 
 
