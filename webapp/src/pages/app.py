@@ -14,6 +14,9 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 def clean_tweet(tweet): # for cleaning the sentence
+    tweet = re.sub(r'http\S+', '', tweet) # remove http links
+    tweet = re.sub(r'bit.ly/\S+', '', tweet) # rempve bitly links
+    tweet = tweet.strip('[link]') # remove [links]
     my_punctuation = '!"$%&\'()*+,-./:;<=>?[\\]\\\\\^_`{|}~•@#'
     tweet = re.sub('(RT\s@[A-Za-z0-9-_]+[A-Za-z0-9-_]+)', '', tweet) # remove retweet
     tweet = re.sub('(@[A-Za-z0-9-_]+[A-Za-z0-9-_]+)', '', tweet)
