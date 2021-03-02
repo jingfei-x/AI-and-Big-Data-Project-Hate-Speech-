@@ -8,7 +8,7 @@ def write():
     with site_header:
         st.title('Predictive Model')
         st.write("""
-        Baseline models included Random Forest, Naive Bayes, Logistic Regression, Support Vector Machine (SVM) and Neural Network. The final model was a **SVM** model that used TFIDF Vectorization for feature engineering. It produced an F1 of 0.91 and Recall (TPR) of 0.88.  
+        Baseline models included Random Forest, Naive Bayes, Logistic Regression, Support Vector Machine (SVM) and Neural Network. The final model was a **SVM** model that used TFIDF Vectorization for feature engineering. It produced an F1 of 0.89 and Recall (TPR) of 0.92.  
         """)
 
     st.text('')

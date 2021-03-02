@@ -33,5 +33,5 @@ def write():
         st.subheader("""
         `Data Distribution in Total`
         """)
-        st.image(Image.open('visualization/dataset.png'), width = 400)
+        st.image(Image.open('visualization/plot.png'), width = 400)
         
