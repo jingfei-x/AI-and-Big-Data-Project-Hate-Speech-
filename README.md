@@ -8,6 +8,14 @@
 For better visualization/**brief summary** of the project, you may look at our [Google Slides](https://drive.google.com/file/d/1ZYdkOrVsBld5lvz3K6pfUXcrPHd8q45z/view?usp=sharing).   
 [![Generic badge](https://img.shields.io/badge/Google-Slides-<YELLOW>.svg)](https://drive.google.com/file/d/1ZYdkOrVsBld5lvz3K6pfUXcrPHd8q45z/view?usp=sharing)
 
+View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
+
+### Folder Directory :
+1. webapp    -  all the related files of the application(codes, trained model & training data in pickle, pictures)
+   - pickle  - training data and the trained SVM model
+   - src - python code for each page of the APP
+   - visualization - picture used in the APP
+   
 
 ## Objective :
 This project aims to analyze how could AI optimize the content moderation processes for business and reduce harmful effects on human moderators by detecting hate speech and offensive speech from normal sayings on social media.  
@@ -79,10 +87,21 @@ neither:
     
 ## Models :
 
-We have tried several machine learning models and neural network and we choose **Support Vector Machine(SVM)** as our final model based on the **recall score** of class 0 (hate speech) and class 1 (offensive language).  
+We have tried several machine learning models and neural network and we choose **Support Vector Machine(SVM)** as our final model based on the **recall score** of class 0 (hate speech) and class 1 (offensive language). Baseline models included Random Forest, Naive Bayes, Logistic Regression, Support Vector Machine (SVM) and Neural Network. The final model, i.e. SVM model uses TFIDF Vectorization for feature engineering. It produced an F1 of 0.89 and Recall (TPR) of 0.92.
+![Confusion Matrix_SVM](/webapp/visualization/svm_model.png)  
+
 For the result of neural network, you can check it out on 
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bd0-Mg-XdyyzLHc9j6rIYKy6tSDALUhY?usp=sharing).    
 
+## Web APP :
+View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
+
+There are 4 pages of the application : Classification of the Tweets/Sentences, Business Problem, Exploratory Data Analysis and our model deployed. 
+### Screenshots of the APP :
+![App Screenshot 1](app_screenshot_1.png)
+![App Screenshot 2](app_screenshot_2.png)
+![App Screenshot 3](app_screenshot_3.png)
+![App Screenshot 4](app_screenshot_4.png)
 
 ## Acknowledgements :
 
