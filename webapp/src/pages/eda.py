@@ -9,12 +9,42 @@ def write():
     with data_desc:
         st.title("Exploratory Data Analysis")
         st.subheader("""
+        `Data Distribution in Total`
+        """)
+        st.write("""
+        The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right 
+        userbase to diversify the samples and to encounter the unbalanced dataset. 
+        """ )
+        st.image(Image.open('visualization/plot.png'), width = 400)
+        st.write("""
+        56% of the datasets (10970 posts) are offensive language, 32% (19189 posts) are hate speech 
+        and only 12% (4162 posts) are neither of them
+        """ )
+        st.subheader("""
         `First Dataset` 
         """)
         st.write('The base dataset contains around **25000** tweets with 3 categories: hate speech, offensive language and neither collected by [Thomas Davidson, Dana Warmsley, Michael Macy, and Ingmar Weber(2017)](https://data.world/thomasrdavidson/hate-speech-and-offensive-language).')
 
         st.image(Image.open('visualization/word_venn.png'), width = 400)
+        st.write("""
+        There are around **3000 tweets** are **arguable** that the contents fall in between hate speech
+        and offensive languages, or hate speench and neither, or offensive language and neither.
+        """)
         st.text('')
+
+        st.text('')
+        st.subheader("""
+        The most used word for **hate speech** in the first dataset:
+        """)
+        st.image(Image.open('visualization/output_34_1.png'), width = 400)
+        st.subheader("""
+        The most used word for ** offensive language** in the first dataset:
+        """)
+        st.image(Image.open('visualization/output_35_1.png'), width = 400)
+        st.subheader("""
+        The most used word for **neither hate speech or offensive language**  in the first dataset:
+        """)
+        st.image(Image.open('visualization/output_36_1.png'), width = 400)
 
         st.subheader("""
         `Second Dataset`
@@ -30,8 +60,8 @@ def write():
 
         st.text('')
 
-        st.subheader("""
-        `Data Distribution in Total`
-        """)
-        st.image(Image.open('visualization/plot.png'), width = 400)
         
+
+                
+        
+
