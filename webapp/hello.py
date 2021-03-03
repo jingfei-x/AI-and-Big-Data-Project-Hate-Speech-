@@ -21,14 +21,14 @@ def main():
     selection = st.sidebar.radio("Go to", list(PAGES.keys()))
     page = PAGES[selection]
     page.write()
-
+   
     with st.spinner(f"Loading {selection} ..."):
         st.sidebar.title("About")
         st.sidebar.info(
-            "This app is maintained by TBS Students in BA&AI. \n\n"
+            "This app is maintained by **MSc Artificial Intelligence and Business Analytics students** from Toulouse Business School, France. \n\n"
             "Check out the project repository [here](https://github.com/jingfei-x/AI-and-Big-Data-Project-Hate-Speech-)"
     )
-
+    st.error("**WARNING:** *The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.*") 
 
 
 if __name__ == "__main__":
