@@ -10,7 +10,16 @@ For better visualization/**brief summary** of the project, you may look at our [
 
 
 ## Objective :
-The aim of this project is to detect hate speech and offensive speech from normal sayings on social media.   
+This project aims to analyze how could AI optimize the content moderation processes for business and reduce harmful effects on human moderators by detecting hate speech and offensive speech from normal sayings on social media.  
+
+By using this [detection app](https://hate-speech-detection-tbs.herokuapp.com), the workload of human moderats would be reduced, so as the Negative Psychological Effects. Moreover, it could help the company to fulfill the requirements/ laws in different countries.
+
+## Business Problems :
+![Business Problem 1](/webapp/visualization/business_problem_1.png)
+![Business Problem 2](/webapp/visualization/business_problem_2.png)
+![Business Problem 3](/webapp/visualization/business_problem_3.png)
+![Business Problem 4](/webapp/visualization/business_problem_4.png)
+
 
 ## Dataset : 
 The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset.  
