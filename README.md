@@ -42,7 +42,7 @@ By using this [detection app](https://hate-speech-detection-tbs.herokuapp.com), 
 
 ## Dataset : 
 The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset. Around 9500 posts/tweets from the second and thrid datasets are added on top of 24,783 tweets from the first dataset to deal with the unbalanced dataset problem of the first dataset.  
-![unbalanced dataset](unbalanced_dataset.png)  
+![unbalanced dataset](/Images/unbalanced_dataset.png)  
 
 
 #### First Dataset : 
@@ -104,7 +104,7 @@ We have tried several machine learning models and neural network and we choose *
 ![Confusion Matrix_SVM](/webapp/visualization/svm_model.png)  
 
 The results of each model :  
-![Model result](model_result.png) 
+![Model result](/Images/mmodel_result.png) 
 
 For the result of neural network, you can check it out on 
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bd0-Mg-XdyyzLHc9j6rIYKy6tSDALUhY?usp=sharing).    
@@ -114,10 +114,10 @@ View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
 
 There are 4 pages of the application : Classification of the Tweets/Sentences, Business Problem, Exploratory Data Analysis and our model deployed. 
 ### Screenshots of the APP :
-![App Screenshot 1](app_screenshot_1.png)
-![App Screenshot 2](app_screenshot_2.png)
-![App Screenshot 3](app_screenshot_3.png)
-![App Screenshot 4](app_screenshot_4.png)
+![App Screenshot 1](/Images/app_screenshot_1.png)
+![App Screenshot 2](/Images/app_screenshot_2.png)
+![App Screenshot 3](/Images/app_screenshot_3.png)
+![App Screenshot 4](/Images/app_screenshot_4.png)
 
 ## Build on :
 - [Python](https://www.python.org/)
