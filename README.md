@@ -22,7 +22,7 @@ View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
    - gab.csv
    - other datasets are for reference
 3. Notebooks - notebooks for model building :
-   - Copy_of_hate_speech_2_extra_data_gab12.ipynb - **final notebook used**
+   - hate_speech_2extra_dataset.ipynb - **final notebook used**
    - hate_speech .ipynb - model testing with 1 dataset (Dataset1_labeled_data.csv)
    - hate_speech -n_gram.ipynb - modeling testing with 1 dataset using n-gram
    - hate_speech-extra_data.ipynb - model testing with 2 datasets (first 2 datasets)
