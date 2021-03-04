@@ -42,7 +42,7 @@ By using this [detection app](https://hate-speech-detection-tbs.herokuapp.com), 
 
 ## Dataset : 
 The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset. Around 9500 posts/tweets from the second and thrid datasets are added on top of 24,783 tweets from the first dataset to deal with the unbalanced dataset problem of the first dataset.  
-![unbalanced dataset](unbalanced_dataset.png)  
+![unbalanced dataset](/unbalanced_dataset.png)  
 
 
 #### First Dataset : 
@@ -97,7 +97,7 @@ neither:
     Total: 34323
     Neither: 4163 (12.13% of total)
 ```
-    
+
 ## Models :
 
 We have tried several machine learning models and neural network and we choose **Support Vector Machine(SVM)** as our final model based on the **recall score** of class 0 (hate speech) and class 1 (offensive language). Baseline models included Random Forest, Naive Bayes, Logistic Regression, Support Vector Machine (SVM) and Neural Network. The final model, i.e. SVM model uses TFIDF Vectorization for feature engineering. It produced an F1 of 0.89 and Recall (TPR) of 0.92.  
