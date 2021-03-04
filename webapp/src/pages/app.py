@@ -42,11 +42,19 @@ def write():
             # removing punctuation
             #user_text = re.sub('[%s]' % re.escape(string.punctuation), '', user_text)
             user_text = clean_tweet(user_text)
+            
+            # Customizing stop words list
+            stop_words = stopwords.words('english')
+            newStopWords = ['ur','u','nd'] # new stop word
+            remove_stopword = ['not','no','nor',"don","aren","couldn","didn","hadn","hasn","haven","isn","mustn","mightn","needn","shouldn",
+                   "wasn","wouldn","won"] # stop words that we don't want
+            stop_words.extend(newStopWords) # add new stop word
+            stop_words = [OldStopWords for OldStopWords in stop_words if OldStopWords not in remove_stopword] # remove some stop words
+            
             # tokenizing
-            stop_words = set(stopwords.words('english'))
             tokens = nltk.word_tokenize(user_text)
             # removing stop words
-            stopwords_removed = [token.lower() for token in tokens if not token.lower() in stop_words]
+            stopwords_removed = [token.lower() for token in tokens if not token.lower() in set(stop_words)]
             # taking root word
             lemmatizer = WordNetLemmatizer() 
             lemmatized_output = []

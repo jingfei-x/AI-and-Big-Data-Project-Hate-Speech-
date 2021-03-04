@@ -16,13 +16,13 @@ View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
    - pickle  - training data and the trained SVM model
    - src - python code for each page of the APP
    - visualization - picture used in the APP
-2. Dataset used to train the model: 
+2. Dataset  - datasets used to train the model: 
    - Dataset1_labeled_data.csv
    - twitter_hate_speench_cleaned.csv
    - gab.csv
    - other datasets are for reference
-3. Notebooks for model building :
-   - Copy_of_hate_speech_2_extra_data_gab12.ipynb - **final notebook used**
+3. Notebooks - notebooks for model building :
+   - hate_speech_2extra_dataset.ipynb - **final notebook used**
    - hate_speech .ipynb - model testing with 1 dataset (Dataset1_labeled_data.csv)
    - hate_speech -n_gram.ipynb - modeling testing with 1 dataset using n-gram
    - hate_speech-extra_data.ipynb - model testing with 2 datasets (first 2 datasets)
@@ -42,7 +42,11 @@ By using this [detection app](https://hate-speech-detection-tbs.herokuapp.com), 
 
 ## Dataset : 
 The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset. Around 9500 posts/tweets from the second and thrid datasets are added on top of 24,783 tweets from the first dataset to deal with the unbalanced dataset problem of the first dataset.  
+<<<<<<< HEAD
 ![unbalanced dataset](/unbalanced_dataset.png)  
+=======
+![unbalanced dataset](/Images/unbalanced_dataset.png)  
+>>>>>>> 9b9529cb8d5d476025e90cc3b0fbb6ccf2bf2c4e
 
 
 #### First Dataset : 
@@ -104,7 +108,7 @@ We have tried several machine learning models and neural network and we choose *
 ![Confusion Matrix_SVM](/webapp/visualization/svm_model.png)  
 
 The results of each model :  
-![Model result](model_result.png) 
+![Model result](/Images/model_result.png) 
 
 For the result of neural network, you can check it out on 
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bd0-Mg-XdyyzLHc9j6rIYKy6tSDALUhY?usp=sharing).    
@@ -114,10 +118,10 @@ View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
 
 There are 4 pages of the application : Classification of the Tweets/Sentences, Business Problem, Exploratory Data Analysis and our model deployed. 
 ### Screenshots of the APP :
-![App Screenshot 1](app_screenshot_1.png)
-![App Screenshot 2](app_screenshot_2.png)
-![App Screenshot 3](app_screenshot_3.png)
-![App Screenshot 4](app_screenshot_4.png)
+![App Screenshot 1](/Images/app_screenshot_1.png)
+![App Screenshot 2](/Images/app_screenshot_2.png)
+![App Screenshot 3](/Images/app_screenshot_3.png)
+![App Screenshot 4](/Images/app_screenshot_4.png)
 
 ## Build on :
 - [Python](https://www.python.org/)
