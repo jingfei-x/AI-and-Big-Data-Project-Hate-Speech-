@@ -1,7 +1,8 @@
 # AI and-Big Data Project -- Hate Speech Detection
-![hate speech](http://www.unz.com/wp-content/uploads/2017/10/shutterstock_712486300.jpg)  
+![hate speech](http://www.unz.com/wp-content/uploads/2017/10/shutterstock_712486300.jpg)   
 
- 
+ Contributer : Jing Fei XU, Suet Wah CHU, Michael WARNER, Gaylor BRUNNER, Yasser MARZOUKI, Purnama Sari SITORUS  
+
 **WARNING:**  
 *The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.*
 
@@ -117,6 +118,11 @@ There are 4 pages of the application : Classification of the Tweets/Sentences, B
 ![App Screenshot 2](app_screenshot_2.png)
 ![App Screenshot 3](app_screenshot_3.png)
 ![App Screenshot 4](app_screenshot_4.png)
+
+## Build on :
+- [Python](https://www.python.org/)
+- [Streamlit](https://streamlit.io/)
+- [Heroku](https://www.heroku.com)  
 
 ## Acknowledgements :
 
