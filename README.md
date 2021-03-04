@@ -42,11 +42,9 @@ By using this [detection app](https://hate-speech-detection-tbs.herokuapp.com), 
 
 ## Dataset : 
 The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset. Around 9500 posts/tweets from the second and thrid datasets are added on top of 24,783 tweets from the first dataset to deal with the unbalanced dataset problem of the first dataset.  
-<<<<<<< HEAD
-![unbalanced dataset](/unbalanced_dataset.png)  
-=======
+
 ![unbalanced dataset](/Images/unbalanced_dataset.png)  
->>>>>>> 9b9529cb8d5d476025e90cc3b0fbb6ccf2bf2c4e
+
 
 
 #### First Dataset : 
