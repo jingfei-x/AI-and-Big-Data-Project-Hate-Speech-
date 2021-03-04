@@ -1,7 +1,8 @@
 # AI and-Big Data Project -- Hate Speech Detection
-![hate speech](http://www.unz.com/wp-content/uploads/2017/10/shutterstock_712486300.jpg)  
+![hate speech](http://www.unz.com/wp-content/uploads/2017/10/shutterstock_712486300.jpg)   
 
- 
+ Contributer : Jing Fei XU, Suet Wah CHU, Michael WARNER, Gaylor BRUNNER, Yasser MARZOUKI, Purnama Sari SITORUS  
+
 **WARNING:**  
 *The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.*
 
@@ -15,6 +16,16 @@ View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
    - pickle  - training data and the trained SVM model
    - src - python code for each page of the APP
    - visualization - picture used in the APP
+2. Dataset used to train the model: 
+   - Dataset1_labeled_data.csv
+   - twitter_hate_speench_cleaned.csv
+   - gab.csv
+   - other datasets are for reference
+3. Notebooks for model building :
+   - Copy_of_hate_speech_2_extra_data_gab12.ipynb - **final notebook used**
+   - hate_speech .ipynb - model testing with 1 dataset (Dataset1_labeled_data.csv)
+   - hate_speech -n_gram.ipynb - modeling testing with 1 dataset using n-gram
+   - hate_speech-extra_data.ipynb - model testing with 2 datasets (first 2 datasets)
    
 
 ## Objective :
@@ -30,7 +41,9 @@ By using this [detection app](https://hate-speech-detection-tbs.herokuapp.com), 
 
 
 ## Dataset : 
-The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset.  
+The model is built based on 3 sets of data collected from Twitter and Gab, an American alt-tech social networking service known for its far-right userbase to diversify the samples and to encounter the unbalanced dataset. Around 9500 posts/tweets from the second and thrid datasets are added on top of 24,783 tweets from the first dataset to deal with the unbalanced dataset problem of the first dataset.  
+![unbalanced dataset](unbalanced_dataset.png)  
+
 
 #### First Dataset : 
 The base dataset contains around 25000 tweets with 3 categories: hate speech, offensive language and neither collected by [Thomas Davidson, Dana Warmsley, Michael Macy, and Ingmar Weber(2017)](https://data.world/thomasrdavidson/hate-speech-and-offensive-language). 5 columns in the dataset represents the following :  
@@ -87,8 +100,11 @@ neither:
     
 ## Models :
 
-We have tried several machine learning models and neural network and we choose **Support Vector Machine(SVM)** as our final model based on the **recall score** of class 0 (hate speech) and class 1 (offensive language). Baseline models included Random Forest, Naive Bayes, Logistic Regression, Support Vector Machine (SVM) and Neural Network. The final model, i.e. SVM model uses TFIDF Vectorization for feature engineering. It produced an F1 of 0.89 and Recall (TPR) of 0.92.
+We have tried several machine learning models and neural network and we choose **Support Vector Machine(SVM)** as our final model based on the **recall score** of class 0 (hate speech) and class 1 (offensive language). Baseline models included Random Forest, Naive Bayes, Logistic Regression, Support Vector Machine (SVM) and Neural Network. The final model, i.e. SVM model uses TFIDF Vectorization for feature engineering. It produced an F1 of 0.89 and Recall (TPR) of 0.92.  
 ![Confusion Matrix_SVM](/webapp/visualization/svm_model.png)  
+
+The results of each model :  
+![Model result](model_result.png) 
 
 For the result of neural network, you can check it out on 
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bd0-Mg-XdyyzLHc9j6rIYKy6tSDALUhY?usp=sharing).    
@@ -102,6 +118,11 @@ There are 4 pages of the application : Classification of the Tweets/Sentences, B
 ![App Screenshot 2](app_screenshot_2.png)
 ![App Screenshot 3](app_screenshot_3.png)
 ![App Screenshot 4](app_screenshot_4.png)
+
+## Build on :
+- [Python](https://www.python.org/)
+- [Streamlit](https://streamlit.io/)
+- [Heroku](https://www.heroku.com)  
 
 ## Acknowledgements :
 
