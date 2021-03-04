@@ -16,12 +16,12 @@ View the [Web APP](https://hate-speech-detection-tbs.herokuapp.com) here.
    - pickle  - training data and the trained SVM model
    - src - python code for each page of the APP
    - visualization - picture used in the APP
-2. Dataset used to train the model: 
+2. Dataset  - datasets used to train the model: 
    - Dataset1_labeled_data.csv
    - twitter_hate_speench_cleaned.csv
    - gab.csv
    - other datasets are for reference
-3. Notebooks for model building :
+3. Notebooks - notebooks for model building :
    - Copy_of_hate_speech_2_extra_data_gab12.ipynb - **final notebook used**
    - hate_speech .ipynb - model testing with 1 dataset (Dataset1_labeled_data.csv)
    - hate_speech -n_gram.ipynb - modeling testing with 1 dataset using n-gram
@@ -104,7 +104,7 @@ We have tried several machine learning models and neural network and we choose *
 ![Confusion Matrix_SVM](/webapp/visualization/svm_model.png)  
 
 The results of each model :  
-![Model result](/Images/mmodel_result.png) 
+![Model result](/Images/model_result.png) 
 
 For the result of neural network, you can check it out on 
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bd0-Mg-XdyyzLHc9j6rIYKy6tSDALUhY?usp=sharing).    
