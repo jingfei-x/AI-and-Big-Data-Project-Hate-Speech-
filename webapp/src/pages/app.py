@@ -46,12 +46,11 @@ def write():
             stop_words = set(stopwords.words('english'))
             tokens = nltk.word_tokenize(user_text)
             # removing stop words
-            stopwords_removed = [token.lower() for token in tokens if token.lower() not in stop_words]
+            stopwords_removed = [token.lower() for token in tokens if not token.lower() in stop_words]
             # taking root word
             lemmatizer = WordNetLemmatizer() 
             lemmatized_output = []
-            #for word in stopwords_removed:
-            for word in tokens:
+            for word in stopwords_removed:
                 lemmatized_output.append(lemmatizer.lemmatize(word))
 
             # instantiating count vectorizor
